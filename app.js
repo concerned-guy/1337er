@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var config = require('config');
+var moment = require('moment');
 var session = require('express-session');
 var flash = require('connect-flash');
 var _ = require('underscore');
@@ -68,6 +69,7 @@ app.use(function (req, res, next) {
   res.locals.userId = req.session.userId;
   res.locals.flashSuccess = req.flash('success');
   res.locals.flashError = req.flash('error');
+  res.locals.moment = moment;
   next();
 });
 

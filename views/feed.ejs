@@ -21,7 +21,7 @@
           <div class="post list-group">
             <div class="list-group-item">
               <%- `<h3 class="post-title"><a href="/user/${post.author.username}">${post.author.fullName}</a></h3>` %>
-              <%- `<p class="post-meta">${post.createdAt.toLocaleString('vi-VN')}</p>` %>
+              <%- `<p class="post-meta">${moment(post.createdAt).fromNow()}</p>` %>
 
               <% if (post.type === 'code') { %>
                 <pre><%= post.body %></pre>
