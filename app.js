@@ -17,51 +17,6 @@ var User = require('./models/user');
 
 
 
-// User.findOneAndUpdate({
-//   username: 'demo',
-// }, {
-//   description: 'A special first user.',
-//   location: 'On the cloud',
-// }, function (err, user) {});
-
-// User.findOneAndUpdate({
-//   username: '12345',
-// }, {
-//   // description: 'A special first user.',
-//   location: 'Hanoi, Vietnam',
-//   link: 'https://www.youtube.com/watch?v=DR6CGXneIuI',
-// }, function (err, user) {});
-
-// User.findOneAndUpdate({
-//   username: 'morph',
-// }, {
-//   description: 'Doctor.\nSecret Laboratories.',
-//   location: 'NY',
-//   link: 'http://9v.lt/blog/category/general/dr-noire-by-recon/',
-//   quote: 'Sit down, Mr. Naissance. I’ve got a job for you.',
-// }, function (err, user) {});
-
-// User.findOneAndUpdate({
-//   username: 'saens',
-// }, {
-//   fullName: 'Camille Saint-Saëns',
-//   location: 'France',
-//   link: 'https://en.wikipedia.org/wiki/Introduction_and_Rondo_Capriccioso',
-// }, function (err, user) {});
-
-// Post.findOneAndUpdate({
-//   type: 'code',
-// }, {
-//   body: 'Second post by the second user.\n\nIts font is monospaced.',
-// }, function (err, post) {});
-
-// Post.findOneAndUpdate({
-// }, {
-//   body: 'I am creating a social network! Yes. Just like the movie!\r\n\r\nFork me on GitHub!',
-// }, function (err, post) {});
-
-
-
 var indexRouter = require('./routes/index');
 var userRouter = require('./routes/user');
 // var accountRouter = require('./routes/account');
