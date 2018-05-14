@@ -44,6 +44,15 @@ var posts = [new Post({
   author: users[1]._id,
 })];
 
+// Init registered users
+User.remove(function (err) {
+  User.insertMany(users, function (err, users) {});
+});
+
+// Initialize test database
+Post.remove(function (err) {
+  Post.insertMany(posts, function (err, posts) {});
+});
 
 
 describe('\n\n*** MODELS TESTS ***', function () {
@@ -53,11 +62,11 @@ describe('\n\n*** MODELS TESTS ***', function () {
   //
   describe('\n -- User', function () {
 
-    // Initialize test database
-    beforeEach(function (done) {
-      User.remove().exec();
-      User.insertMany(users, done);
-    });
+    // // Initialize test database
+    // beforeEach(function (done) {
+    //   User.remove().exec();
+    //   User.insertMany(users, done);
+    // });
 
     describe('Find All Users', function () {
       it('should return every users', function (done) {
@@ -104,19 +113,19 @@ describe('\n\n*** MODELS TESTS ***', function () {
   //
   describe('\n -- Post', function () {
 
-    // Init registered users
-    before(function (done) {
-      User.remove(function (err) {
-        User.insertMany(users, done);
-      });
-    });
+    // // Init registered users
+    // before(function (done) {
+    //   User.remove(function (err) {
+    //     User.insertMany(users, done);
+    //   });
+    // });
 
-    // Initialize test database
-    beforeEach(function (done) {
-      Post.remove(function (err) {
-        Post.insertMany(posts, done);
-      });
-    });
+    // // Initialize test database
+    // beforeEach(function (done) {
+    //   Post.remove(function (err) {
+    //     Post.insertMany(posts, done);
+    //   });
+    // });
 
     describe('Find All Posts', function () {
       it('should return posts with their correct authors', function (done) {

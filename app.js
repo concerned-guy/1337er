@@ -25,6 +25,14 @@ var User = require('./models/user');
 // }, function (err, user) {});
 
 // User.findOneAndUpdate({
+//   username: '12345',
+// }, {
+//   // description: 'A special first user.',
+//   location: 'Hanoi, Vietnam',
+//   link: 'https://www.youtube.com/watch?v=DR6CGXneIuI',
+// }, function (err, user) {});
+
+// User.findOneAndUpdate({
 //   username: 'morph',
 // }, {
 //   description: 'Doctor.\nSecret Laboratories.',
