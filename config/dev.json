@@ -1,0 +1,4 @@
+{
+  "db_uri": "mongodb://localhost/s-express",
+  "logger": true
+}
