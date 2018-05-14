@@ -11,12 +11,7 @@ var _ = require('underscore');
 
 // Database connection & models
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI ||
-                 process.env.MONGOHQ_URL ||
-                 config.db_uri);
-console.log(process.env.MONGOLAB_URI ||
-            process.env.MONGOHQ_URL ||
-            config.db_uri);
+mongoose.connect(config.db_uri, { autoIndex: false });
 var Post = require('./models/post');
 var User = require('./models/user');
 
