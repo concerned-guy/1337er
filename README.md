@@ -16,28 +16,19 @@
 
 * [Nodejs](https://nodejs.org/)
 * NPM (Node Package Manager) - It is bundled with **Node**
+* [MongoDB](https://www.mongodb.com/)
 
-## Install
+## Install and Run
 
-* Clone this repo
-```bash
-git clone https://github.com/concerned-guy/USTH-SE-2018.git
-
-```
-
-* Change directory into the app
-```bash
-cd USTH-SE-2018/Team-1337
-```
-
-* Install package requirements
-
-
-## Run the app
 Use command
+
 ```bash
-php artisan server
+git clone https://github.com/concerned-guy/1337er
+cd 1337er
+npm install
+npm start
 ```
+
 And then, in your favorite browser, visit the following URL
 
-[http://localhost:8000/hello-world](http://localhost:8000/hello-world)
+[http://localhost:3000/](http://localhost:3000/)
